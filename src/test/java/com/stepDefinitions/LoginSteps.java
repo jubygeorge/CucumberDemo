@@ -28,11 +28,17 @@ public class LoginSteps {
 
 	}
 
-	@When("user enters username and password")
-	public void user_enters_username_and_password() {
+//	@When("user enters username and password")
+//	public void user_enters_username_and_password() {
+//		System.out.println("Step 2:User enters username and password");
+//		driver.findElement(By.name("username")).sendKeys("Admin");
+//		driver.findElement(By.name("password")).sendKeys("admin123");
+//	}
+	@When("user enters (.*) and (.*)$")
+	public void user_enters_username_and_password(String uname,String pwd) {
 		System.out.println("Step 2:User enters username and password");
-		driver.findElement(By.name("username")).sendKeys("Admin");
-		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.name("username")).sendKeys("uname");
+		driver.findElement(By.name("password")).sendKeys("pwd");
 	}
 
 	@And("user clicks on Login button")
