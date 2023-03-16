@@ -19,7 +19,6 @@ public class LoginSteps {
 	@Given("user is in Login Page")
 	public void user_is_in_login_page() throws InterruptedException {
 		System.out.println("Step 1:User is in Login Page");
-		System.out.println("Step 1':User is in Login Page");
 		WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		driver = new ChromeDriver();
