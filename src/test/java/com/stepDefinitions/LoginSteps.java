@@ -24,6 +24,7 @@ public class LoginSteps {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("URL of the App:");
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
 	}
